@@ -300,7 +300,7 @@ async def language_check(bot, query):
         except KeyError:
             await save_group_settings(query.message.chat.id, 'auto_delete', True)
             btn.insert(0, 
-                InlineKeyboardButton("🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊", url=f"https://t.me/How_to_open_link_rockersbot/8")
+                [InlineKeyboardButton("🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊", url=f"https://t.me/How_to_open_link_rockersbot/8")
         ])
             
         if offset != "":
@@ -1551,7 +1551,7 @@ async def auto_filter(client, msg, spoll=False):
     except KeyError:
         await save_group_settings(message.chat.id, 'auto_delete', True)
         btn.insert(0, 
-            InlineKeyboardButton("🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊", url=f"https://t.me/How_to_open_link_rockersbot/8")
+            [InlineKeyboardButton("🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊", url=f"https://t.me/How_to_open_link_rockersbot/8")
         ])
 
     if offset != "":
