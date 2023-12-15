@@ -1689,7 +1689,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b> {message.from_user.mention} ನೀನು ಕೇಳಿದ ಸಿರಿಯಲ್ {search} ಪೈಲ್ ಸಿದ್ಧ ವಾಗಿದೆ ಕೆಳಗಡೆಯ ಲಿಂಕ್ ಆನ ಕ್ಲಿಕ್ ಮಾಡು</b>"
+        cap = f"<b> {message.from_user.mention} ನೀನು ಕೇಳಿದ ಕನ್ನಡ ಸಿರಿಯಲ್ #{search} ಪೈಲ್ ಸಿದ್ಧ ವಾಗಿದೆ ಕೆಳಗಡೆಯ ದಿನಾಂಕ ನೊಡಿ ಲಿಂಕ್ ಆನ ಕ್ಲಿಕ್ ಮಾಡಿ download ಮಾಡು</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
