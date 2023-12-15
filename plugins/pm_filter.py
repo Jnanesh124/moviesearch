@@ -1537,16 +1537,6 @@ async def auto_filter(client, msg, spoll=False):
                 [
                     InlineKeyboardButton(f'🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊', url=f't.me/How_to_open_link_rockersbot/8')
         ]
-        else:
-            btn.insert(0, 
-                [
-                    InlineKeyboardButton(f'🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊', url=f't.me/How_to_open_link_rockersbot/8')
-                ]
-    except KeyError:
-        await save_group_settings(message.chat.id, 'auto_delete', True)
-        btn.insert(0, 
-            [InlineKeyboardButton("🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊", url=f"https://t.me/How_to_open_link_rockersbot/8")
-        ])
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
