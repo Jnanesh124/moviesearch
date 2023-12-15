@@ -1537,7 +1537,6 @@ async def auto_filter(client, msg, spoll=False):
                 [
                     InlineKeyboardButton(f'🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊', url=f't.me/How_to_open_link_rockersbot/8')
         ])
-
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
