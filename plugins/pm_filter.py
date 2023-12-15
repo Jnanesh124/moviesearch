@@ -297,12 +297,6 @@ async def language_check(bot, query):
                 for file in files
             ]
                     
-        except KeyError:
-            await save_group_settings(query.message.chat.id, 'auto_delete', True)
-            btn.insert(0, 
-                [InlineKeyboardButton("🔊 ಯವ ರೀತಿ ಸಿರಿಯಲ್ ನೋಡುವುದು ನನ್ನ 𝐂𝐥𝐢𝐜𝐤 ಮಾಡು 🔊", url=f"https://t.me/How_to_open_link_rockersbot/8")
-        ])
-            
         if offset != "":
             key = f"{query.message.chat.id}-{query.message.id}"
             BUTTONS[key] = movie
