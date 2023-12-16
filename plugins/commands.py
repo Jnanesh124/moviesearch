@@ -344,7 +344,7 @@ async def start(client, message):
             [
                          [
                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url="https://t.me/+_Lq9hrbFpKgxNTY1"),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/+iHuXFsXW-1g0ZmU1)
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url="https://t.me/+iHuXFsXW-1g0ZmU1")
                        ],[
                           InlineKeyboardButton("adult channel", url="https://t.me/+Ce98xoyvoLcwYThl")
                          ]
